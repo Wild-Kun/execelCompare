@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>excel表格对比</title>
+</head>
+
+<body>
+    <form action="index.php?page=1" method="POST" enctype="multipart/form-data">
+        <table style="margin: 0 auto;">
+        <tr>
+            <td>
+                <span>表格一</span><input type="file" name="excel_old" >
+            </td>
+            <td>
+                <span>行数</span><input type="text" name="excel_old_line_nums" >
+            </td>
+        </tr>
+        <tr><td></td></tr>
+        <tr>
+            <td>
+                <span>表格二</span><input type="file" name="excel_new" >
+            </td>
+            <td>
+                <span>行数</span><input type="text" name="excel_new_line_nums" >
+            </td>
+
+        </tr>
+        <tr><td></td></tr>
+        <tr>
+            <td><input type="submit" value="提交"></td>
+        </tr>
+    </table>
+    </form>
+</body>
+
+</html>
